@@ -1,5 +1,7 @@
-FROM ubuntu
-RUN apt update
-RUN apt install apache2 -y
-ADD . /var/www/html/
-ENTRYPOINT apachectl -d FOREGROUND 
+FROM httpd:2.4-alpine
+
+
+COPY . /usr/local/apache2/htdocs/
+
+
+EXPOSE 80
