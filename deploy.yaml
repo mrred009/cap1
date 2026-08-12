@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: custom
-          image: ssasan/project2
+          image: mrred008/project2
           ports:
             - containerPort: 80
